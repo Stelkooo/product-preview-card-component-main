@@ -309,6 +309,67 @@ template {
   display: none;
 }
 
+.product__type,
+.product__desc,
+.cost__original,
+.button {
+  font-family: "Montserrat", sans-serif;
+}
+
+.product__name,
+.cost__current {
+  font-family: "Fraunces", serif;
+}
+
+.product__type,
+.product__desc,
+.cost__original {
+  font-weight: 500;
+}
+
+.product__name,
+.cost__current,
+.button {
+  font-weight: 700;
+}
+
+.product__type,
+.product__desc,
+.cost__original {
+  color: #6c7289;
+}
+
+.product__name,
+.cost__current {
+  font-size: 2rem;
+}
+
+.product__type {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.product__name {
+  line-height: 2rem;
+}
+.product__desc {
+  font-size: 0.875rem;
+  line-height: 23px;
+}
+
+.cost__current {
+  color: #3d8168;
+}
+.cost__original {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+}
+
+.button {
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -340,72 +401,6 @@ body {
   display: none;
 }
 
-.product {
-  padding: 1.5rem;
-}
-.product__type {
-  margin-bottom: 0.75rem;
-  font-size: 0.75rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: #6c7289;
-}
-.product__name {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  font-family: "Fraunces", serif;
-  font-weight: 700;
-  line-height: 2rem;
-}
-.product__desc {
-  margin-bottom: 1.5rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 0.875rem;
-  color: #6c7289;
-  line-height: 23px;
-}
-
-.cost {
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-}
-.cost__current {
-  font-family: "Fraunces", serif;
-  font-weight: 700;
-  font-size: 2rem;
-  color: #3d8168;
-  margin-right: 1.2rem;
-}
-.cost__original {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 0.8rem;
-  color: #6c7289;
-  text-decoration: line-through;
-}
-
-.button {
-  width: 100%;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 0.8rem;
-  outline: none;
-  border: none;
-  border-radius: 0.5rem;
-  background-color: #3d8168;
-  color: #ffffff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 0.8rem;
-  cursor: pointer;
-}
-
 @media screen and (min-width: 1440px) {
   .card {
     display: flex;
@@ -420,6 +415,22 @@ body {
     max-width: 50%;
     border-radius: 0.8rem 0 0 0.8rem;
   }
+}
+.product {
+  padding: 1.5rem;
+}
+.product__type {
+  margin-bottom: 0.75rem;
+}
+.product__name {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.product__desc {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 1440px) {
   .product {
     padding: 2rem;
   }
@@ -432,9 +443,35 @@ body {
   .product__desc {
     margin-bottom: 1.75rem;
   }
+}
+.cost {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.cost__current {
+  margin-right: 1.2rem;
+}
+
+@media screen and (min-width: 1440px) {
   .cost {
     margin-bottom: 1.9rem;
   }
+}
+.button {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #3d8168;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
   .button:hover {
     background-color: #1a4032;
   }

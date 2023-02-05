@@ -1,0 +1,14 @@
+.cost {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  &__current {
+    margin-right: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cost {
+    margin-bottom: 1.9rem;
+  }
+}

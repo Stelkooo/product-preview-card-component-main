@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as *;
+
+.product {
+  padding: 1.5rem;
+  &__type {
+    margin-bottom: 0.75rem;
+  }
+  &__name {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  &__desc {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .product {
+    padding: 2rem;
+    &__type {
+      margin-bottom: 1.25rem;
+    }
+    &__name {
+      margin-bottom: 1.5rem;
+    }
+    &__desc {
+      margin-bottom: 1.75rem;
+    }
+  }
+}

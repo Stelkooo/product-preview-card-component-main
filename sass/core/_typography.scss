@@ -1,0 +1,70 @@
+@use '../abstracts/variables' as *;
+
+// fonts
+$fraunces: 'Fraunces', serif;
+$montserrat: 'Montserrat', sans-serif;
+
+.product__type,
+.product__desc,
+.cost__original,
+.button {
+  font-family: $montserrat;
+}
+
+.product__name,
+.cost__current {
+  font-family: $fraunces;
+}
+
+.product__type,
+.product__desc,
+.cost__original {
+  font-weight: 500;
+}
+
+.product__name,
+.cost__current,
+.button {
+  font-weight: 700;
+}
+
+.product__type,
+.product__desc,
+.cost__original {
+  color: $aurometal-saurus;
+}
+
+.product__name,
+.cost__current {
+  font-size: 2rem;
+}
+
+.product {
+  &__type {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  &__name {
+    line-height: 2rem;
+  }
+  &__desc {
+    font-size: 0.875rem;
+    line-height: 23px;
+  }
+}
+
+.cost {
+  &__current {
+    color: $deep-aquamarine;
+  }
+  &__original {
+    font-size: 0.8rem;
+    text-decoration: line-through;
+  }
+}
+
+.button {
+  color: $pure-white;
+  font-size: 0.8rem;
+}
