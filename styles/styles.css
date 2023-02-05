@@ -353,6 +353,7 @@ body {
   color: #6c7289;
 }
 .product__name {
+  margin-top: 0;
   margin-bottom: 1rem;
   font-size: 2rem;
   font-family: "Fraunces", serif;
