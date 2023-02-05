@@ -1,15 +1,17 @@
 @use '../abstracts/variables' as *;
 
 .card {
+  overflow: hidden;
   max-width: 375px;
   background-color: $pure-white;
   border-radius: 0.8rem;
-  &__img-mobile {
-    border-radius: 0.8rem 0.8rem 0 0;
-    width: 100%;
+  & > * {
+    flex-basis: 50%;
   }
-  &__img-desktop {
-    display: none;
+  &__img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -17,14 +19,5 @@
   .card {
     display: flex;
     max-width: 600px;
-    &__img-mobile {
-      display: none;
-    }
-    &__img-desktop {
-      display: block;
-      height: 100%;
-      max-width: 50%;
-      border-radius: 0.8rem 0 0 0.8rem;
-    }
   }
 }

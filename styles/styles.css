@@ -362,12 +362,20 @@ template {
 }
 .cost__original {
   font-size: 0.8rem;
-  text-decoration: line-through;
 }
 
 .button {
   color: #ffffff;
   font-size: 0.8rem;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 * {
@@ -389,31 +397,24 @@ body {
 }
 
 .card {
+  overflow: hidden;
   max-width: 375px;
   background-color: #ffffff;
   border-radius: 0.8rem;
 }
-.card__img-mobile {
-  border-radius: 0.8rem 0.8rem 0 0;
-  width: 100%;
+.card > * {
+  flex-basis: 50%;
 }
-.card__img-desktop {
-  display: none;
+.card__img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (min-width: 1440px) {
   .card {
     display: flex;
     max-width: 600px;
-  }
-  .card__img-mobile {
-    display: none;
-  }
-  .card__img-desktop {
-    display: block;
-    height: 100%;
-    max-width: 50%;
-    border-radius: 0.8rem 0 0 0.8rem;
   }
 }
 .product {

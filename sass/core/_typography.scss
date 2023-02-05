@@ -60,11 +60,19 @@ $montserrat: 'Montserrat', sans-serif;
   }
   &__original {
     font-size: 0.8rem;
-    text-decoration: line-through;
   }
 }
 
 .button {
   color: $pure-white;
   font-size: 0.8rem;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
