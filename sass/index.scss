@@ -105,4 +105,39 @@ body {
   font-family: $montserrat;
   font-weight: 700;
   font-size: 0.8rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    display: flex;
+    max-width: 600px;
+    &__img-mobile {
+      display: none;
+    }
+    &__img-desktop {
+      display: block;
+      height: 100%;
+      max-width: 50%;
+      border-radius: 0.8rem 0 0 0.8rem;
+    }
+  }
+  .product {
+    padding: 2rem;
+    &__type {
+      margin-bottom: 1.25rem;
+    }
+    &__name {
+      margin-bottom: 1.5rem;
+    }
+    &__desc {
+      margin-bottom: 1.75rem;
+    }
+  }
+  .cost {
+    margin-bottom: 1.9rem;
+  }
+  .button:hover {
+    background-color: $deep-aquamarine-hover;
+  }
 }
